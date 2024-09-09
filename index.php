@@ -6,9 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    echo "My first Website";
-    ?>
-     <H1> My first website</H1>
+
+<form method="GET">
+    <input type= "text" name= "person">
+    <button>SUBMIT</button>
+</form>
+
+<?php
+  $name = $_GET['person'];
+  echo $name." is a handsome fellow!";
+?>
 </body>
 </html>
