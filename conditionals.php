@@ -32,10 +32,26 @@
 <?php
 
 
+    <?php
+    $x = 8;
+
+    switch ($x){
+        case 1;
+            echo "coding is difficult";
+        break;
+        case 2;
+            echo "coding is interesting";
+        break;
+        case 3;
+            echo "coding is time consuming";
+        break;
+        case 4;
+            echo "coding is hard";
+        break;
+        default:
+            echo "coding is fun";
+    }
+
 ?>
-
-
-
-    ?>
 </body>
 </html>
