@@ -11,21 +11,28 @@
 
     function newCalc($x) {
         $newnr = $x * 0.75;
-        echo "here is 75% of what you wrote: ".$newnr;
+        echo "Here is 75% of what you wrote: ".$newnr;
     }
 
 
-$x = 100;
-newCalc($x);
-echo "<br>";
-$a = 10;
-newCalc($a);
-
-
+    $x = 100;
+    newCalc($x);
+    echo "<br>";
+    $a = 10;
+    newCalc($a);
 
 ?>
+<br>
+<br>
+<?php
 
-
+    function tenniscal($x) {
+        $tennr = $x + 2;
+        echo "the total amount of tennis players including the 2 coaches is: " .$tennr;
+    }
+$x = 5;
+tenniscal($x);
+?>
 
 
 </body>

@@ -11,9 +11,6 @@
     $array = array ("Bryan", "Ever", "Jose", "Miguel", "Chayce");
 
     echo $array [0];
-
-
-
 ?>
 
 </body>
