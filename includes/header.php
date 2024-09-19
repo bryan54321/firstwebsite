@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,28 +12,26 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="index.php">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link active" aria-current="page" href="index.php">index</a>
+                <a class="nav-link" href="arrays.php">arrays</a>
+                <a class="nav-link" href="calculator.php">calculator</a>
+                <a class="nav-link" href="calendar.php">calendar</a>
+                <a class="nav-link" href="conditionals.php">conditionals</a>
+                <a class="nav-link" href="datatypes.php">datatypes</a>
+                <a class="nav-link" href="function.php">functions</a>
+                <a class="nav-link" href="loops.php">loops</a>
+                <a class="nav-link" href="operators.php">operators</a>
             </div>
             </div>
         </div>
         </nav>
     </header>
-
-    <section>
-        <div class="SomeMainContent">
-            <h1>Hi There</h1>
-        </dic>
-    </section>
-
 
 </body>
 </html>

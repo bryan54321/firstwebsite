@@ -1,3 +1,7 @@
+<?php
+    include 'includes/header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,9 +41,6 @@
         <h1>     </h1>
 
 <?php
-
-
-    <?php
     $x = 8;
 
     switch ($x){
