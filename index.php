@@ -26,3 +26,36 @@
   $name = $_GET['person'];
   echo $name. " is a handsome fellow!";
 ?>
+<?php
+    $sql = "SELECT * FROM users;";
+    $result = mysqli_query($conn, $sql);
+    $resultcheck = mysqli_num_rows($result);
+
+    if ($resultcheck > 0){
+        while ($row = mysqli_fetch_assoc($result)){
+            echo $row ['username'] . "<br>";
+        }
+    }
+?>
+
+<form action="includes/signup.inc.php" method="POST">
+    <input type="text" name="first" placeholder="firstname">
+    <br>
+    <input type="text" name="last" placeholder="lastname">
+    <br>
+    <input type="text" name="email" placeholder="e-mail">
+    <br>
+    <input type="text" name="uid" placeholder="username">
+    <br>
+    <input type="password" name="pwd" placeholder="password">
+    <br>
+    <button type="submit" name="submit">sign up</button>
+</form>
+
+<?php
+    $sql = "SELECT * FROM users;";
+    $result = mysqli_query($conn, $sql);
+?>
+
+
+</body?>
