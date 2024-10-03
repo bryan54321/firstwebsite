@@ -53,6 +53,15 @@
         ?>
 
 
+        <nav>
+            <a href="">
+                <img src="" alt="">
+        </nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">portfollio</a></li>
+            <li><a href="">about me</a></li>
+            <li><a href="">contact</a></li>
 
 
 
