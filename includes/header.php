@@ -62,6 +62,10 @@
             <li><a href="">portfollio</a></li>
             <li><a href="">about me</a></li>
             <li><a href="">contact</a></li>
+        </ul>
+        <div>
+            <form
+        </div>
 
 
 
