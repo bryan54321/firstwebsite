@@ -1,9 +1,7 @@
 <?php
     include 'includes/header.php';
 ?>
-<?php
-    include_once 'includes/connection.php';
-?>
+
 
 
 
@@ -22,8 +20,6 @@
 $_SESSION['name'] = "Bryan";
 
 ?>
-
-
 
 </body>
 </html>

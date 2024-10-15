@@ -1,9 +1,6 @@
 <?php
     include 'includes/header.php';
 ?>
-<?php
-    include_once 'includes/connection.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
