@@ -1,5 +1,6 @@
 <?php
     include 'includes/header.php';
+    include_once 'includes/dbh.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -23,54 +24,24 @@
   $name = $_GET['person'];
   echo $name. " is a handsome fellow!";
 ?>
-<?php
-    $sql = "SELECT * FROM users;";
-    $result = mysqli_query($conn, $sql);
-    $resultcheck = mysqli_num_rows($result);
-
-    if ($resultcheck > 0){
-        while ($row = mysqli_fetch_assoc($result)){
-            echo $row ['username'] . "<br>";
-        }
-    }
-?>
-
-<form action="includes/signup.inc.php" method="POST">
-    <input type="text" name="first" placeholder="firstname">
-    <br>
-    <input type="text" name="last" placeholder="lastname">
-    <br>
-    <input type="text" name="email" placeholder="e-mail">
-    <br>
-    <input type="text" name="uid" placeholder="username">
-    <br>
-    <input type="password" name="pwd" placeholder="password">
-    <br>
-    <button type="submit" name="submit">sign up</button>
-</form>
 
 <?php
     $sql = "SELECT * FROM users;";
     $result = mysqli_query($conn, $sql);
-?>
-
-
-
-
-
-
-
-<?php
-  require "header.php";
 ?>
 
 <main>
-    <p>you are logged out!</p>
-    <p>you are logged in!</p>
-</main>
+    
 
-<?php
-    require "footer.php";
-?>
+    <?php
+        if (isset($_SESSION['userId'])) {
+            echo '<p>you are logged out!</p>';
+        }
+        
+    else{
+        echo '<p>you are logged in!</p>';
+    }
+    ?>
+</main>
 
 </body?>
